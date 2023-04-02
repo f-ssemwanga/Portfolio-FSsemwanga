@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Quicksand&display=swap');
+
+:root{
+    --paddingSm:16px;
+    --paddingMd:calc(var(--paddingSm)*1.25);
+    --paddingLg:calc(var(--paddingMd)*1.5);
+    --paddingXs:calc(var(--paddingLg)*2);
+    --colorDark:#281E24;
+    --colorLight:#ffffff;
+    --colorMblue:#4579B6;
+    --colorDBlue:#93C7E8;
+    --brighterPink:#D5B5CC;
+    --browish:#C87353;
+}
+/* remove browser defaults */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--paddingMd);
+    font-weight: 500;
+    color:var(--colorLight);
+    background-image: url(/assets/images/bg_102.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+   }
+
+h1, h2, h3, h4, h5, li{
+    font-family: 'Catamaran', sans-serif;
+   
+   }
+header a{
+    text-decoration: none;
+}
+header{
+    font-size: var(--paddingLg);
+    padding:0 var(--paddingLg);
+    height:165px;
+    display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   background-color: #281E24;
+ 
+   
+}
+#mainNav ul {
+    list-style: none;
+    display:flex;
+    
+}
+#logo{
+    display: flex;
+    align-items: center;
+    margin-right:auto
+}
+#mainNav ul li{
+    padding:5px;
+    margin-left: 10px;
+}
+ul a{
+    color:var(--colorLight)
+}
+ul li a:hover{
+    transform: scale(1.1);
+    transition: 0.3;
+    color:var(--browish);
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+}
+#profilePic{
+    margin-top: var(--paddingLg);
+}
+.mainHead{
+    font-size: var(--paddingXs);
+}
+#intro button{
+    width:200px;
+    height:50px;
+    margin: var(--paddingXs);
+ 
+
+}
