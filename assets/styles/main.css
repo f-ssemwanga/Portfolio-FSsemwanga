@@ -27,6 +27,7 @@ body{
     background-image: url(/assets/images/bg_102.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 100px;
 
     
    }
@@ -41,7 +42,7 @@ header a{
 header{
     font-size: var(--paddingLg);
     padding:0 var(--paddingLg);
-    height:165px;
+    height:100px;
     display: flex;
    justify-content: flex-end;
    align-items: center;
@@ -71,6 +72,13 @@ ul li a:hover{
     transition: 0.3;
     color:var(--browish);
 }
+
+#top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
 #intro{
     display: flex;
     flex-direction: column;
@@ -88,6 +96,25 @@ ul li a:hover{
     width:200px;
     height:50px;
     margin: var(--paddingXs);
+    font-size: var(--paddingMd);
+    cursor: pointer;
+    border-radius: 5px;
  
 
+}
+#intro a button {
+    background-color: var(--colorDBlue);
+    transition: background-color 0.3s ease-in-out;
+  }
+#intro a button:hover{
+    background-color: var(--brighterPink);
+}
+#about, #projects, #work, #social{
+    display:none;
+}
+footer{
+    color:var(--browish);
+    display: flex;
+    justify-content: center;
+    font-size:0.8rem;
 }
