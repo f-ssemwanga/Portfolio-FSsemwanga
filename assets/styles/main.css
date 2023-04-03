@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Quicksand&display=swap');
 
 :root{
-    --paddingSm:16px;
+    --paddingSm:18px;
     --paddingMd:calc(var(--paddingSm)*1.25);
     --paddingLg:calc(var(--paddingMd)*1.5);
     --paddingXs:calc(var(--paddingLg)*2);
@@ -27,7 +27,7 @@ body{
     background-image: url(/assets/images/bg_102.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 100px;
+    padding-top: 120px;
 
     
    }
@@ -40,7 +40,7 @@ header a{
     text-decoration: none;
 }
 header{
-    font-size: var(--paddingLg);
+    font-size: var(--paddingMd);
     padding:0 var(--paddingLg);
     height:100px;
     display: flex;
@@ -79,10 +79,11 @@ ul li a:hover{
     width: 100%;
     z-index: 999;
 }
-#intro{
+#intro-section{
     display: flex;
     flex-direction: column;
     align-items: center;
+   padding-top:120px;
 
    
 }
@@ -92,7 +93,7 @@ ul li a:hover{
 .mainHead{
     font-size: var(--paddingXs);
 }
-#intro button{
+#intro-section button{
     width:200px;
     height:50px;
     margin: var(--paddingXs);
@@ -102,19 +103,110 @@ ul li a:hover{
  
 
 }
-#intro a button {
+
+#intro-section a button {
     background-color: var(--colorDBlue);
     transition: background-color 0.3s ease-in-out;
   }
-#intro a button:hover{
+#intro-section a button:hover{
     background-color: var(--brighterPink);
 }
-#about, #projects, #work, #social{
-    display:none;
+
+
+/* section transitions */
+/* section{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
+section.show{
+    opacity:1;
+} */
+
 footer{
     color:var(--browish);
     display: flex;
     justify-content: center;
     font-size:0.8rem;
 }
+#about-section {
+    background-color: var(--colorLight);
+    color:#281E24;
+    padding: 20px;
+    opacity: 0.8;
+   padding-top: 100px;
+   margin-bottom: 35px;
+  }
+  
+  #about-section h2 {
+    font-size: var(--paddingLg);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #about-section p {
+    font-size: var(--paddingMd);
+    line-height: 1.5;
+    text-align: justify;
+    
+  }
+  #about-section p:nth-of-type(odd) {
+    background-color: var(--colorDark);
+    color: var(--colorLight);
+    padding: 10px;
+    border-radius: 1px;
+  }
+  #about-section p:nth-of-type(even) {
+    background-color: var(--colorDBlue);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  /* Skills section CSS */
+  #skills-section {
+    background-color: var(--colorDBlue);
+    color: var(--colorLight);
+    padding: 20px;
+    padding-top: 100px;
+ 
+    }
+    
+    #skills-section h2 {
+    font-size: var(--paddingLg);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    color:var(--colorDark);
+    }
+    
+    .skill-group {
+    margin-bottom: 20px;
+    }
+    
+    .skill-group h3 {
+    font-size: var(--paddingMd);
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    
+    .skill-group ul {
+    list-style:none;
+    text-indent: 10px;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .skill-group li {
+    font-size: var(--paddingSm);
+    line-height: 1.5;
+    margin-bottom: 5px;
+    color:var(--colorDark);
+    }
+   
+    
+    .skill-group li::before {
+    content: "*";
+    padding-right: 0.5em;
+    color: var(--colorLight);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    }
