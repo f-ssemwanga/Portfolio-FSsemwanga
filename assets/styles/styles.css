@@ -12,6 +12,7 @@
     --colorFooter:#97DEFF;
     --colorVDark:#010b16;
     --colorVDeep:#020331;
+    --colorfooter2:#4a254d;
 }
 /* remove browser defaults */
 *{
@@ -30,7 +31,28 @@ body{
     color:var(--color); 
     min-width: 300px;
    }
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    
+}
 
+footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background-color: var(--colorPurple);
+    font-size: 0.6em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--colorVDeep);
+    font-weight: 600;
+}
 .burger{
 display: flex;
 
@@ -68,7 +90,7 @@ nav ul{
     display: flex;
     justify-content: space-between;
     padding-right: var(--sizeMd);
-    padding-top:100px;
+    padding-top:50px;
   
  
   
@@ -109,13 +131,14 @@ section{
     height: calc(100vh-100px);
     padding-top: 10px;
     display:flex;
-    flex-direction: column;
+    margin-bottom: 50px;
+    /* flex-direction: column; */
 }
-#intro-section{
+#intro-section, #about-section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: var(--sizeSm);
+   
 }
 #intro-section h3{
     margin-top:1em;
@@ -123,33 +146,41 @@ section{
     text-align: center;
 }
 #intro-section h1{
-    margin-top: 2em;
+    margin-top:10px;
     font-size: var(--sizeLg);
     text-align: center;
     text-shadow: 0px 0px 8px var(--colorLight);
 }
 #profilePic{
-    margin-top:var(--sizeld);
+    margin-top:100px;
+}
+#about-section{
+    padding:var(--sizeSm);
+    text-align: justify;
+    background-color: var(--colorFooter);
+    background-image: none;
+    font-size: 1em;
+  
+}
+section p{
+    margin-bottom:1.5em;
+    line-height: 1.5;
+
 }
 
-
 .eport {
+    margin-top:50px;
      font-size:1.2em;
-    border-radius: 5px;
     padding: 25px;
     text-transform: uppercase;
     transition: all 0.5s;
-  margin-top: 3em;
     font-weight: 500;
     text-transform: uppercase;
-    border-radius: 10px;
  
     
 }
-.eport:hover{
-    transition: 0.5s;
-   
-}
+
+
 
  /* Desktop Override */
  @media only screen and (min-width: 952px) {
