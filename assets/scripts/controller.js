@@ -82,6 +82,6 @@ learnMoreLink.addEventListener('click', e => {
   e.preventDefault(); // prevent default anchor behaviour
   const targetSection = document.querySelector('#about-section');
   targetSection.scrollIntoView({
-    behaviour: 'smooth'
+    behavior: 'smooth'
   });
 });
