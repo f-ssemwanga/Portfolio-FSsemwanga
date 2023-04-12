@@ -7,107 +7,66 @@
     <title>Francis Ssemwanga | Portfolio</title>
     <link rel="stylesheet" href="assets/styles/styles.css">
     <body>
-    <header>
-         
-        <nav role="navigation" aria-label="main">
-        <label class="logo text-pop-up-top">FS</label>
-        
-         <ul class="mobLinks">
-                <li><a class ="active" href="#intro-section">Home</a></li>
-                <li><a href="#about-section">About</a></li>
-                <li><a href="#skills-section">Skills</a></li>
-                <li><a href="#projects-section">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#resume-section">Resume</a></li>
-         </ul>
-         <div class="burger" onClick="toggleNav()"><img  src="assets/images/burger.png" alt="burger icon image"></div>
-        </nav>
-   
-     </header>
+        <header>
+            <div class="logo"><img src="assets/images/name_logo2.png" alt=""></div> 
+            <nav class="mainNav" role="navigation" aria-label="main">
+            
+      
+            
+             <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a  class ="active" href="about.html">About</a></li>
+                    <li><a href="#skills-section">Skills</a></li>
+                    <li><a href="#projects-section">Projects</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                    <!-- <li><a href="#resume-section">Resume</a></li> -->
+                    
+             </ul>
+             <div id ="cvDownload" class="cvDownload" title="Download CV"><img src="assets/images/cvDownload.png" alt="cv download" onclick="downloadPdf()"></div>
+            </nav>
+            <div class="mobLinks"> 
+                    <div class="mobileLinks">
+                        <nav class="molinks">
+                        <ul >
+                            <li><a class ="active" href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#skills-section">Skills</a></li>
+                            <li><a href="#projects-section">Projects</a></li>
+                            <li><a href="#contact-section">Contact</a></li>
+                        </ul>
+                        </nav>
+                    </div>       
+                    <div id ="cvDownload" class="cvDownload" title="Download CV"><img src="assets/images/cvDownload.png" alt="cv download" onclick="downloadPdf()"></div>
+                    <div class="burger"><img  src="assets/images/burger.png" alt="burger icon image"></div>
+                    </nav>
+            </div>
+         </header>
         
     <main>
-        <section id="intro-section">
-            <div id="profilePic">
+        <section id="about-section" >
+            <div class="aboutHeading">
+                <h2>About Me</h2>
+            </div>
+           <div class="about-container"> 
+            <div class="cards">
+                <p>Welcome to my portfolio page! My name is Francis Ssemwanga, and I am a Computer Science enthusiast currently pursuing a Master's degree in Computer Science with Artificial Intelligence from the prestigious University of York, England.</p>
+                <p>As an ambitious and dedicated individual, I am also completing a 16-week boot camp with Purple Beard LTD, a leading technology training company. In addition, I am currently working as a Lead Teacher of Computer Science and Director of IT at SMCS School, where I have developed a passion for inspiring and guiding the next generation of technologists.</p>
+                <p>My expertise lies in software design and development, artificial intelligence, and machine learning. I am always eager to explore and enhance my knowledge of cutting-edge technologies such as computer vision and language processing, which I believe hold the key to unlocking endless possibilities in the tech industry.</p>
+                <p>Aside from my academic pursuits, I hold a Bachelor of Science in Education with Maths and a Diploma in Electrical and Electronic Engineering. Furthermore, I hold the General Teaching Council's Qualified Teaching Status Award (QTS), which showcases my commitment to delivering the highest quality education to my students.</p>
+                <p>I am confident that my diverse skill set, passion for technology, and drive to succeed make me an excellent candidate for any organisation seeking a talented and dedicated Computer Science professional. Thank you for taking the time to view my portfolio, and I look forward to connecting with you soon!</p>
+            </div>
+            <div class="aboutPicture">
                 <img src="assets/images/fssemwanga_profile.png" alt="image of Francis">
-            </div>
-           <h1 class="mainHead">Francis Ssemwanga</h1>
-            <h3>
-                Lead Computer Science Teacher <br> Post-Grad Student Computer Science with AI 
-            </h3>
-            <div class="eport"><a href="#about-section">Learn More</a></div>
+            </div>   
+        </div>              
         </section>
-        <section id="about-section">
-            <h2>About Me</h2>
-            
-            <p>Welcome to my portfolio page! My name is Francis Ssemwanga, and I am a Computer Science enthusiast currently pursuing a Master's degree in Computer Science with Artificial Intelligence from the prestigious University of York, England.</p>
-            <p>As an ambitious and dedicated individual, I am also completing a 16-week boot camp with Purple Beard LTD, a leading technology training company. In addition, I am currently working as a Lead Teacher of Computer Science and Director of IT at SMCS School, where I have developed a passion for inspiring and guiding the next generation of technologists.</p>
-            <p>My expertise lies in software design and development, artificial intelligence, and machine learning. I am always eager to explore and enhance my knowledge of cutting-edge technologies such as computer vision and language processing, which I believe hold the key to unlocking endless possibilities in the tech industry.</p>
-            <p>Aside from my academic pursuits, I hold a Bachelor of Science in Education with Maths and a Diploma in Electrical and Electronic Engineering. Furthermore, I have been awarded the GTC qualified Teaching Status, which showcases my commitment to delivering the highest quality education to my students.</p>
-            <p>I am confident that my diverse skill set, passion for technology, and drive to succeed make me an excellent candidate for any organisation seeking a talented and dedicated Computer Science professional. Thank you for taking the time to view my portfolio, and I look forward to connecting with you soon!</p>                
-        </section>
-        <section id="skills-section">
-            <h2>Skills</h2>
-            <div class="skill-group">
-              <h3>Technical Skills</h3>
-              <ul>
-                <li>Programming languages: Python, Java, HTML, CSS, JavaScript</li>
-                <li>Tools and technologies: Git, VSCode, Jupyter notebooks, Google colab, SQLite, SQL</li>
-                <li>Python modules: pandas, numpy, matplot lib, pygame, pyQt5, TensorFlow</li>
-                <li>Graphics editing software: Adobe Fireworks, Adobe InDesign</li>
-              </ul>
-            </div>
-            <div class="skill-group">
-              <h3>Soft Skills</h3>
-              <ul>
-                <li>Problem-solving: Able to identify and analyse complex problems and develop effective solutions.</li>
-                <li>Analytical thinking: Skilled in breaking down complex problems into smaller components and analyzing each component to find potential solutions.</li>
-                <li>Time management: Able to prioritize tasks, meet deadlines, and efficiently use time to balance academic studies, work, and a boot camp.</li>
-                <li>Attention to detail: Keen eye for catching small errors or bugs, and ensuring code accuracy and efficiency.</li>
-                <li>Adaptability: Willingness to learn and adapt to new tools, technologies, and languages.</li>
-                <li>Communication: Effective communication of complex technical information to a variety of audiences, including students, colleagues, and stakeholders.</li>
-                <li>Creativity: Skilled in graphics editing and video editing, indicating a strong creative skill set that can be applied to other areas of work.</li>
-              </ul>
-            </div>
-            <div class="skill-group">
-              <h3>Non-Soft Skills</h3>
-              <ul>
-                <li>Presenting: Able to deliver engaging and informative presentations to a variety of audiences.</li>
-                <li>Training: Skilled in providing effective training to colleagues and students.</li>
-                <li>Leadership: Ability to lead teams and projects towards success.</li>
-                <li>Teamwork: Experienced in collaborating with team members to achieve shared goals.</li>
-              </ul>
-            </div>
-        </section>
-        
-        <section id="projects-section">
-            <h2>Projects I have engaged in </h2>
-            <p>Jobs I have done
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis doloribus repellat veniam vero reprehenderit sequi? Facilis eos, a laborum ea deleniti minus, fuga ratione voluptates, hic perspiciatis error quas et?
-            </p>
-        </section>
-        <section id="resume-section">
-            <h2>Work</h2>
-            <p>Jobs I have done
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis doloribus repellat veniam vero reprehenderit sequi? Facilis eos, a laborum ea deleniti minus, fuga ratione voluptates, hic perspiciatis error quas et?
-            </p>
-        </section>
-
-
-        <section id="social_contact-section">
-            <h2>Social Networks</h2>
-            <nav role="navigation" aria-label="social navigation">
-                <ul>
-                    <li><a href="#"></a>Personal Github</li>
-                    <li><a href="#"></a>Work Github</li>
-                    <li><a href="#"></a>Linked-in</li>
-                </ul>
-            </nav>
-            contact form goes here
-        </section>
+       
     </main>
     <footer>
-        MSC Computer Science and AI: University of York | QTS: University of Hertfordshire | Front End Development: Purple Beard LTD | Linkin | Github</a>
-    </footer>
-    <script src="/assets/scripts/controller.js"></script>
+        <div class="qualifications">MSC Computer Science and AI |  QTS |  Front End Development</div>
+        <div class="linkdin" title="Linkedin"><a href="https://www.linkedin.com/in/francis-ssemwanga-897a7112a/"><img src="assets/images/linkedin-icon.png" alt="linkedin icon"></a></div>
+        <div class="git" title="Github"><a href="https://github.com/f-ssemwanga"><img src="assets/images/github-icon.png" alt="githum icon"></a></div>
+      </footer>
+      <script src="assets/scripts/controller.js"></script>
 </body>
 </html>

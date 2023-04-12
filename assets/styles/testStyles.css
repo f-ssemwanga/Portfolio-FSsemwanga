@@ -1,0 +1,169 @@
+/* For mobile view */
+@media (max-width: 767px) {
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+:root{
+    font-size: 16;
+    --sizeSm:1.2rem;
+    --sizeMd:calc(var(--sizeSm)*1.5);
+    --sizeLg:calc(var(--sizeMd)*1.5);
+    --sizeXl:calc(var(--sizeLg)*1.5);
+    --colorPurple:#ab7bf8;
+    --colorLighter:#C9EEFF;
+    --colorLight:#4579B6;
+    --colorDBlue:#97DEFF;
+    --colorFooter:#97DEFF;
+    --colorVDark:#010b16;
+    --colorVDeep:#020331;
+    --colorfooter2:#4a254d;
+}
+/* remove browser defaults */
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style:none;
+    box-sizing: border-box;
+    
+   
+}
+
+body{
+    background: url(../images/bg_102.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height:100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--sizeSm);
+    font-weight: 400;
+    color:var(--color); 
+   
+  
+   }
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%; 
+    z-index: 999; 
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    margin-top: 5px;
+    left:0;
+    width:100%;
+    height:80px;
+    background-color: var(--colorVDeep);
+    font-size: 0.6em;
+    color:white;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+
+  
+}
+footer img{
+    transform: scale(0.5);
+}
+.qualifications{
+   flex:0 1 85%;
+    align-items: center;
+    min-width: 400px;
+    padding-left:1.5rem;
+   
+}
+.qualifications,.linkdin, .git{
+    display: flex;
+    align-items: center;
+
+
+}
+.linkdin img:hover , .git img:hover{
+     box-shadow: 0px 5px 10px 0px rgba(245, 12, 229, 0.9); 
+     transform: scale(0.45); 
+     transition: 1s ease-in-out;
+      border-radius: 5px; 
+      cursor:pointer;  
+}
+
+    
+    .mainNav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .mobLinks {
+      display: none;
+      width: 100%;
+      margin-top: 20px;
+      padding-left: 0;
+    }
+  
+    .mobLinks li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .mobLinks li a {
+      display: block;
+      font-size: 20px;
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      padding: 5px 0;
+    }
+  
+    .mobLinks li a:hover {
+      color: #dc143c;
+    }
+  
+    .burger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    /* Changes to the CSS code to position the links */
+    .aboutPicture {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .mobLinks {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      width: 100%;
+      padding: 10px 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .mobLinks li {
+      margin-bottom: 10px;
+    }
+  
+    .mobLinks li a {
+      font-size: 20px;
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      padding: 5px 0;
+    }
+  
+    .mobLinks li a:hover {
+      color: #dc143c;
+    }
+  }
+  
