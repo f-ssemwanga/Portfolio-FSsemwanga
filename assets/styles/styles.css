@@ -274,13 +274,13 @@ section{
     transform:scale(0.8)
 
 }
-.aboutHeading h2{
+.aboutHeading, #skillsHeading h2{
     padding-top: 3.5rem;
 }
-#about-section{
+#about-section, #skills-section {
     padding:0.5rem;
     text-align: justify;
-    background: var(--colorLight);
+    background: var(--colorLighter);
     /* background-image: none; */
     font-size: 1em;
     margin-top:70px;
@@ -298,7 +298,7 @@ section p{
 }
 section p:nth-of-type(1n) {
     background-color: white;
-    color:black;
+    color:var(--colorVDeep);
   }
 section p:nth-of-type(2n) {
     background-color: var(--colorVDark);
@@ -335,7 +335,53 @@ background:var(--colorPurple);
 .aboutPicture{
     display:none;
 }
-
+/*--------------------------------------- Skills page---------------------------*/
+/* hide the content for each skills group */
+.skill-group{
+    border:1px solid var(--colorVDeep);
+    margin-bottom:2em;
+    overflow: hidden;
+    border-radius: 5px;
+    padding:1em;
+}
+.skill-group li span.subhead{
+    font-weight: bold;
+}
+.skill-group h3{
+    background-color: var(--colorVDeep);
+    color:var(--colorDBlue);
+    margin:0;
+    padding:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+.skill-group h3::after{
+    content: "\002B";
+    display: inline-block;
+     margin-left: 10px;
+     transform: translateY(-2px);
+}
+.skill-group h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+  }
+  .skill-group.active h3::after {
+    content: "\2212";
+  }
+  .skill-group ul {
+    margin: 0;
+    padding: 0 10px;
+    display: none;
+    list-style: none;
+  }
+  .skill-group.active ul {
+    display: block;
+ 
+  }
+.skill-group.active ul li{
+padding-top:1em;
+}
  /* Desktop Override */
  @media only screen and (min-width: 901px) {
     body{
@@ -461,6 +507,6 @@ background:var(--colorPurple);
    }
    .aboutHeading h2{
     padding-top: 1.2rem;
-  
+   }
 
  }

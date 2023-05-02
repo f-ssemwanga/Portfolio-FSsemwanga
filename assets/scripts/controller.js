@@ -24,3 +24,18 @@ function downloadPdf() {
   link.click();
   document.body.removeChild(link);
 }
+
+//skills group accordion
+//get all skills group elements
+const skillGroups = document.querySelectorAll('#skills-section .skill-group')
+
+//loop through each skills group element
+skillGroups.forEach((skillGroup) =>{
+  //get the heading element of the skills group
+  const heading = skillGroup.querySelector('h3');
+  //add the event listener to the heading
+  heading.addEventListener('click', () =>{
+    //toggle visibility
+    skillGroup.classList.toggle('active')
+  })
+})
