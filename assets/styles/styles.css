@@ -336,7 +336,7 @@ background:var(--colorPurple);
     display:none;
 }
 /*--------------------------------------- Skills page---------------------------*/
-/* hide the content for each skills group */
+
 .skill-group{
     border:1px solid var(--colorVDeep);
     /* margin-bottom:2em;
