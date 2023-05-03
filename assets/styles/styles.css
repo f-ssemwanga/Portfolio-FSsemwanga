@@ -339,7 +339,9 @@ background:var(--colorPurple);
 /* hide the content for each skills group */
 .skill-group{
     border:1px solid var(--colorVDeep);
-    margin-bottom:2em;
+    /* margin-bottom:2em;
+    margin-left:0.3em; */
+    margin:2em 0.3em;
     overflow: hidden;
     border-radius: 5px;
     padding:1em;
@@ -355,11 +357,12 @@ background:var(--colorPurple);
     font-size:18px;
     cursor:pointer;
 }
+/* add a pseudo elelent to the right of h3 */
 .skill-group h3::after{
     content: "\002B";
     display: inline-block;
      margin-left: 10px;
-     transform: translateY(-2px);
+    transform: translateY(-2px);  /* vertically center the + h3 */
 }
 .skill-group h3 {
     display: flex;
